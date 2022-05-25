@@ -1,5 +1,6 @@
 nnoremap <leader>f8 :!poetry run flake8 %<CR>
 nnoremap <leader>fb :!poetry run black %<CR>
+nnoremap <leader>fe :!poetry run blue %<CR>
 nnoremap <leader>fs :!poetry run isort %<CR>
 nnoremap <leader>fm :!poetry run mypy %<CR>
 

@@ -1,16 +1,13 @@
 # Setup fzf
-# ---------
-if [[ ! "$PATH" == *${HOME}/.config/nvim/plugged/fzf/bin* ]]; then
-  export PATH="${PATH:+${PATH}:}${HOME}/.config/nvim/plugged/fzf/bin"
-fi
+
 
 # Auto-completion
 # ---------------
-[[ $- == *i* ]] && source "${HOME}/.config/nvim/plugged/fzf/shell/completion.zsh" 2> /dev/null
+[[ $- == *i* ]] && source "$ZDOTDIR/plugins/fzf/shell/completion.zsh" 2> /dev/null
 
 # Key bindings
 # ------------
-source "${HOME}/.config/nvim/plugged/fzf/shell/key-bindings.zsh"
+source "$ZDOTDIR/plugins/fzf/shell/key-bindings.zsh"
 
 export FZF_COMPLETION_TRIGGER='~~'
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore-vcs --hidden'
