@@ -1,1 +1,1 @@
-nnoremap <leader>fb :!rustfmt %<CR>
+nnoremap <leader>ff :!rustfmt %<CR>

@@ -1,4 +1,5 @@
 " Django tag expansion for surround.vim
+nnoremap <leader>ff :!djhtml -i %<CR>
 let b:surround_{char2nr("v")} = "{{ \r }}"
 let b:surround_{char2nr("{")} = "{{ \r }}"
 let b:surround_{char2nr("%")} = "{% \r %}"
